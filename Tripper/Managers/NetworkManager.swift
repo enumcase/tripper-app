@@ -16,7 +16,7 @@ final class NetworkManager {
     
     private let baseURL = "https://075d1cc7eea2.ngrok.io/"
     
-    func getTrips(completion: @escaping (Result<[Trip], NetworkManagerError>) -> Void) {
+    func getTrips(completion: @escaping (Result<[Trip], RequestError>) -> Void) {
         let endpoint = baseURL + "trip"
         
         guard let url = URL(string: endpoint) else {
