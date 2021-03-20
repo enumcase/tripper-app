@@ -15,7 +15,7 @@ class TripCardCell: UITableViewCell {
     
     private let darkenedView = DarkenedView()
     
-    private let bookmarkButton: UIButton = {
+    let bookmarkButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setBackgroundImage(ButtonImages.notBookmarked, for: .normal)
@@ -100,20 +100,23 @@ class TripCardCell: UITableViewCell {
     }
 
     private func setSeasonImageView(of trip: Trip) {
-//        switch trip.season {
-//        case .summer:
-//            self.seasonImageView.image = SeasonImages.summer
-//        case .spring:
-//            self.seasonImageView.image = SeasonImages.spring
-//        case .fall:
-//            self.seasonImageView.image = SeasonImages.fall
-//        case .winter:
-//            self.seasonImageView.image = SeasonImages.winter
-//        }
+        switch trip.season {
+        case "Summer":
+            self.seasonImageView.image = SeasonImages.summer
+        case "Spring":
+            self.seasonImageView.image = SeasonImages.spring
+        case "Fall":
+            self.seasonImageView.image = SeasonImages.fall
+        case "Winter":
+            self.seasonImageView.image = SeasonImages.winter
+        default:
+            break
+        }
     }
     
     @objc private func didTapBookmarkButton() {
         isBookmarked.toggle()
+        print(isBookmarked)
         bookmarkButton.setBackgroundImage(
             self.isBookmarked ? ButtonImages.bookmarked : ButtonImages.notBookmarked,
             for: .normal

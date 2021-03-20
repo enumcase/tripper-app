@@ -17,7 +17,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         window.makeKeyAndVisible()
-        window.rootViewController = TripperTabBarController()
+        
+        let isSignedIn = LoginViewModel().$logged.wrappedValue
+        
+        if isSignedIn {
+            window.rootViewController = TripperTabBarController()
+        } else {
+            window.rootViewController = SignInViewController()
+        }
+        
         self.window = window
     }
 

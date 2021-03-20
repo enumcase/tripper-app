@@ -58,8 +58,7 @@ class TripsViewController: DataLoadingViewController {
                     self.tripsTableView.reloadData()
                 }
             case .failure(let error):
-                #warning("THINK about adding UIAlertVC")
-                print(error.rawValue)
+                self.PresentAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
             }
             
             self.dismissLoadingView()
@@ -172,6 +171,7 @@ extension TripsViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: TripCardCell.reuseIdentifier, for: indexPath) as! TripCardCell
         let trip = trips[indexPath.section]
         cell.setCardData(for: trip)
+//        if cell.isBookmarked
         return cell
     }
     

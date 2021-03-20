@@ -14,7 +14,6 @@
 		7405553E2605CD2D00926FE1 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405553D2605CD2D00926FE1 /* TripsViewController.swift */; };
 		740555422605CD3800926FE1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740555412605CD3800926FE1 /* SettingsViewController.swift */; };
 		740555452605CD4A00926FE1 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740555442605CD4A00926FE1 /* SignInViewController.swift */; };
-		740555482605CD5300926FE1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740555472605CD5300926FE1 /* SignUpViewController.swift */; };
 		7405554D2605CE2D00926FE1 /* TopMenuBarStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405554C2605CE2D00926FE1 /* TopMenuBarStackView.swift */; };
 		740555502605CEAB00926FE1 /* MenuBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405554F2605CEAB00926FE1 /* MenuBarButton.swift */; };
 		7405555C2605D70E00926FE1 /* TripperTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405555B2605D70E00926FE1 /* TripperTabBarController.swift */; };
@@ -22,7 +21,6 @@
 		740555662605D7AA00926FE1 /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740555652605D7AA00926FE1 /* BookmarksViewController.swift */; };
 		7405556B2605EED900926FE1 /* TripCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405556A2605EED900926FE1 /* TripCardCell.swift */; };
 		740555702605F01A00926FE1 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405556F2605F01A00926FE1 /* Trip.swift */; };
-		740555732605F03F00926FE1 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740555722605F03F00926FE1 /* Season.swift */; };
 		740555762605F12900926FE1 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740555752605F12900926FE1 /* Follower.swift */; };
 		7405557A2605F42D00926FE1 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740555792605F42D00926FE1 /* Images.swift */; };
 		7405557F2605F87A00926FE1 /* SeasonImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405557E2605F87A00926FE1 /* SeasonImages.swift */; };
@@ -33,7 +31,8 @@
 		74469CA6260648B70018B02C /* DataLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469CA5260648B70018B02C /* DataLoadingViewController.swift */; };
 		74469CAA260651C60018B02C /* DarkenedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469CA9260651C60018B02C /* DarkenedView.swift */; };
 		74469CAE260666ED0018B02C /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469CAD260666ED0018B02C /* PersistenceManager.swift */; };
-		74469CB226066C010018B02C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469CB126066C010018B02C /* LoginView.swift */; };
+		74469CCF260687020018B02C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469CCE260687020018B02C /* UIViewControllerExtension.swift */; };
+		74469CD526068ED40018B02C /* TripperMainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469CD426068ED40018B02C /* TripperMainButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +45,6 @@
 		7405553D2605CD2D00926FE1 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 		740555412605CD3800926FE1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		740555442605CD4A00926FE1 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		740555472605CD5300926FE1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7405554C2605CE2D00926FE1 /* TopMenuBarStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMenuBarStackView.swift; sourceTree = "<group>"; };
 		7405554F2605CEAB00926FE1 /* MenuBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarButton.swift; sourceTree = "<group>"; };
 		7405555B2605D70E00926FE1 /* TripperTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripperTabBarController.swift; sourceTree = "<group>"; };
@@ -54,7 +52,6 @@
 		740555652605D7AA00926FE1 /* BookmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
 		7405556A2605EED900926FE1 /* TripCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCardCell.swift; sourceTree = "<group>"; };
 		7405556F2605F01A00926FE1 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
-		740555722605F03F00926FE1 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
 		740555752605F12900926FE1 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		740555792605F42D00926FE1 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		7405557E2605F87A00926FE1 /* SeasonImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonImages.swift; sourceTree = "<group>"; };
@@ -65,7 +62,8 @@
 		74469CA5260648B70018B02C /* DataLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoadingViewController.swift; sourceTree = "<group>"; };
 		74469CA9260651C60018B02C /* DarkenedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkenedView.swift; sourceTree = "<group>"; };
 		74469CAD260666ED0018B02C /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
-		74469CB126066C010018B02C /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		74469CCE260687020018B02C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		74469CD426068ED40018B02C /* TripperMainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripperMainButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +100,7 @@
 				740555392605CB1500926FE1 /* Views */,
 				7405554A2605CDD400926FE1 /* Models */,
 				7405554B2605CDFC00926FE1 /* Managers */,
+				74469CCD260686D70018B02C /* Extensions */,
 				740555782605F42000926FE1 /* Constants */,
 				7405553A2605CB1E00926FE1 /* Resources */,
 				740555312605CA9200926FE1 /* Info.plist */,
@@ -112,13 +111,11 @@
 		740555392605CB1500926FE1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				74469CB126066C010018B02C /* LoginView.swift */,
 				74469CA8260651AA0018B02C /* UIViews */,
 				74469C9F260643410018B02C /* TextFields */,
 				7405556D2605EEDB00926FE1 /* Cells */,
 				740555572605D10700926FE1 /* StackViews */,
 				740555582605D11000926FE1 /* Buttons */,
-				740555532605D0DD00926FE1 /* Labels */,
 				740555522605CEC000926FE1 /* LaunchScreen */,
 			);
 			path = Views;
@@ -148,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				7405556F2605F01A00926FE1 /* Trip.swift */,
-				740555722605F03F00926FE1 /* Season.swift */,
 				740555752605F12900926FE1 /* Follower.swift */,
 			);
 			path = Models;
@@ -172,13 +168,6 @@
 			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
-		740555532605D0DD00926FE1 /* Labels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Labels;
-			sourceTree = "<group>";
-		};
 		740555572605D10700926FE1 /* StackViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				7405554F2605CEAB00926FE1 /* MenuBarButton.swift */,
+				74469CD426068ED40018B02C /* TripperMainButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -211,7 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				740555442605CD4A00926FE1 /* SignInViewController.swift */,
-				740555472605CD5300926FE1 /* SignUpViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -248,6 +237,14 @@
 				74469CA9260651C60018B02C /* DarkenedView.swift */,
 			);
 			path = UIViews;
+			sourceTree = "<group>";
+		};
+		74469CCD260686D70018B02C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				74469CCE260687020018B02C /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,7 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74469C9A260635750018B02C /* NetworkManager.swift in Sources */,
-				740555482605CD5300926FE1 /* SignUpViewController.swift in Sources */,
+				74469CD526068ED40018B02C /* TripperMainButton.swift in Sources */,
 				740555762605F12900926FE1 /* Follower.swift in Sources */,
 				74469CAE260666ED0018B02C /* PersistenceManager.swift in Sources */,
 				7405554D2605CE2D00926FE1 /* TopMenuBarStackView.swift in Sources */,
@@ -332,7 +329,6 @@
 				74469CA6260648B70018B02C /* DataLoadingViewController.swift in Sources */,
 				740555662605D7AA00926FE1 /* BookmarksViewController.swift in Sources */,
 				740555422605CD3800926FE1 /* SettingsViewController.swift in Sources */,
-				74469CB226066C010018B02C /* LoginView.swift in Sources */,
 				74055582260601B700926FE1 /* ButtonImages.swift in Sources */,
 				74469C9D260638F60018B02C /* RequestError.swift in Sources */,
 				7405557F2605F87A00926FE1 /* SeasonImages.swift in Sources */,
@@ -342,7 +338,7 @@
 				740555702605F01A00926FE1 /* Trip.swift in Sources */,
 				7405556B2605EED900926FE1 /* TripCardCell.swift in Sources */,
 				7405557A2605F42D00926FE1 /* Images.swift in Sources */,
-				740555732605F03F00926FE1 /* Season.swift in Sources */,
+				74469CCF260687020018B02C /* UIViewControllerExtension.swift in Sources */,
 				7405555F2605D76400926FE1 /* CreateTripViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 import Foundation
 
 struct Trip: Codable, Hashable {
-    var season: String //Season
+    let season: String
     let name: String
     let year: Int
     let duration: Int?

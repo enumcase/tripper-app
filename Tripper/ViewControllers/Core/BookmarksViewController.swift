@@ -9,6 +9,8 @@ import UIKit
 
 class BookmarksViewController: UIViewController {
 
+    private var trips: [Trip] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground

@@ -55,7 +55,7 @@ class CreateTripViewController: UIViewController {
             
             imageAddButton.centerYAnchor.constraint(equalTo: placeholderImageView.centerYAnchor),
             imageAddButton.centerXAnchor.constraint(equalTo: placeholderImageView.centerXAnchor),
-            imageAddButton.widthAnchor.constraint(equalToConstant: 75),
+            imageAddButton.widthAnchor.constraint(equalToConstant: 64),
             imageAddButton.heightAnchor.constraint(equalTo: imageAddButton.widthAnchor)
         ])
     }
