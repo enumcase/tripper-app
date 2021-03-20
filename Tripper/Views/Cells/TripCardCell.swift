@@ -11,11 +11,18 @@ class TripCardCell: UITableViewCell {
 
     var isBookmarked = false
     
+    let darkenedView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .black
+        view.layer.opacity = 0.15
+        return view
+    }()
+    
     let bookmarkButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.frame = CGRect(x: 0, y: 0, width: 26, height: 18)
-        button.setImage(ButtonImages.notBookmarked, for: .normal)
+        button.setBackgroundImage(ButtonImages.notBookmarked, for: .normal)
         button.tintColor = .white
         return button
     }()
@@ -61,13 +68,16 @@ class TripCardCell: UITableViewCell {
         clipsToBounds = true
         layer.cornerRadius = 18
         
-        addSubview(bookmarkButton)
         addSubview(cardImageView)
+        addSubview(darkenedView)
+        contentView.addSubview(bookmarkButton)
         addSubview(seasonImageView)
         addSubview(cardLocationLabel)
         addSubview(yearDurationLabel)
         
         setConstraints()
+        
+        bookmarkButton.addTarget(self, action: #selector(didTapBookmarkButton), for: .touchUpInside)
     }
     
     required init?(coder: NSCoder) {
@@ -99,6 +109,14 @@ class TripCardCell: UITableViewCell {
         }
     }
     
+    @objc private func didTapBookmarkButton() {
+        isBookmarked.toggle()
+        bookmarkButton.setBackgroundImage(
+            self.isBookmarked ? ButtonImages.bookmarked : ButtonImages.notBookmarked,
+            for: .normal
+        )
+    }
+    
     private func setConstraints() {
         
         let leftRightPadding: CGFloat = 24
@@ -106,13 +124,20 @@ class TripCardCell: UITableViewCell {
         let spacing: CGFloat = 7
         
         NSLayoutConstraint.activate([
-            bookmarkButton.topAnchor.constraint(equalTo: self.topAnchor),
-            bookmarkButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -leftRightPadding),
+            darkenedView.topAnchor.constraint(equalTo: self.topAnchor),
+            darkenedView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            darkenedView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            darkenedView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             
             cardImageView.topAnchor.constraint(equalTo: self.topAnchor),
             cardImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
             cardImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             cardImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            
+            bookmarkButton.topAnchor.constraint(equalTo: cardImageView.topAnchor, constant: -3),
+            bookmarkButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -leftRightPadding),
+            bookmarkButton.heightAnchor.constraint(equalToConstant: 24),
+            bookmarkButton.widthAnchor.constraint(equalToConstant: 24),
             
             yearDurationLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -bottomPadding),
             yearDurationLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: leftRightPadding),
