@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		740555242605CA8D00926FE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740555232605CA8D00926FE1 /* AppDelegate.swift */; };
+		740555262605CA8D00926FE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740555252605CA8D00926FE1 /* SceneDelegate.swift */; };
+		7405552D2605CA9200926FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7405552C2605CA9200926FE1 /* Assets.xcassets */; };
+		740555302605CA9200926FE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7405552E2605CA9200926FE1 /* LaunchScreen.storyboard */; };
+		7405553E2605CD2D00926FE1 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405553D2605CD2D00926FE1 /* TripsViewController.swift */; };
+		740555422605CD3800926FE1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740555412605CD3800926FE1 /* SettingsViewController.swift */; };
+		740555452605CD4A00926FE1 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740555442605CD4A00926FE1 /* SignInViewController.swift */; };
+		740555482605CD5300926FE1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740555472605CD5300926FE1 /* SignUpViewController.swift */; };
+		7405554D2605CE2D00926FE1 /* TopMenuBarStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405554C2605CE2D00926FE1 /* TopMenuBarStackView.swift */; };
+		740555502605CEAB00926FE1 /* MenuBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405554F2605CEAB00926FE1 /* MenuBarButton.swift */; };
+		7405555C2605D70E00926FE1 /* TripperTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405555B2605D70E00926FE1 /* TripperTabBarController.swift */; };
+		7405555F2605D76400926FE1 /* CreateTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405555E2605D76400926FE1 /* CreateTripViewController.swift */; };
+		740555662605D7AA00926FE1 /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740555652605D7AA00926FE1 /* BookmarksViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		740555202605CA8D00926FE1 /* Tripper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tripper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		740555232605CA8D00926FE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		740555252605CA8D00926FE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7405552C2605CA9200926FE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7405552F2605CA9200926FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		740555312605CA9200926FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7405553D2605CD2D00926FE1 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
+		740555412605CD3800926FE1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		740555442605CD4A00926FE1 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		740555472605CD5300926FE1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7405554C2605CE2D00926FE1 /* TopMenuBarStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMenuBarStackView.swift; sourceTree = "<group>"; };
+		7405554F2605CEAB00926FE1 /* MenuBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarButton.swift; sourceTree = "<group>"; };
+		7405555B2605D70E00926FE1 /* TripperTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripperTabBarController.swift; sourceTree = "<group>"; };
+		7405555E2605D76400926FE1 /* CreateTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTripViewController.swift; sourceTree = "<group>"; };
+		740555652605D7AA00926FE1 /* BookmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7405551D2605CA8D00926FE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		740555172605CA8D00926FE1 = {
+			isa = PBXGroup;
+			children = (
+				740555222605CA8D00926FE1 /* Tripper */,
+				740555212605CA8D00926FE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		740555212605CA8D00926FE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				740555202605CA8D00926FE1 /* Tripper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		740555222605CA8D00926FE1 /* Tripper */ = {
+			isa = PBXGroup;
+			children = (
+				7405553C2605CCE900926FE1 /* ViewControllers */,
+				740555392605CB1500926FE1 /* Views */,
+				7405554A2605CDD400926FE1 /* Models */,
+				7405554B2605CDFC00926FE1 /* Managers */,
+				7405553A2605CB1E00926FE1 /* Resources */,
+				740555312605CA9200926FE1 /* Info.plist */,
+			);
+			path = Tripper;
+			sourceTree = "<group>";
+		};
+		740555392605CB1500926FE1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				740555572605D10700926FE1 /* StackViews */,
+				740555582605D11000926FE1 /* Buttons */,
+				740555532605D0DD00926FE1 /* Labels */,
+				740555522605CEC000926FE1 /* LaunchScreen */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7405553A2605CB1E00926FE1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				740555232605CA8D00926FE1 /* AppDelegate.swift */,
+				740555252605CA8D00926FE1 /* SceneDelegate.swift */,
+				7405552C2605CA9200926FE1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7405553C2605CCE900926FE1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				740555622605D76800926FE1 /* Core */,
+				740555632605D77C00926FE1 /* Auth */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7405554A2605CDD400926FE1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7405554B2605CDFC00926FE1 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		740555522605CEC000926FE1 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7405552E2605CA9200926FE1 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		740555532605D0DD00926FE1 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		740555572605D10700926FE1 /* StackViews */ = {
+			isa = PBXGroup;
+			children = (
+				7405554C2605CE2D00926FE1 /* TopMenuBarStackView.swift */,
+			);
+			path = StackViews;
+			sourceTree = "<group>";
+		};
+		740555582605D11000926FE1 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				7405554F2605CEAB00926FE1 /* MenuBarButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		740555622605D76800926FE1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7405555B2605D70E00926FE1 /* TripperTabBarController.swift */,
+				7405553D2605CD2D00926FE1 /* TripsViewController.swift */,
+				7405555E2605D76400926FE1 /* CreateTripViewController.swift */,
+				740555652605D7AA00926FE1 /* BookmarksViewController.swift */,
+				740555412605CD3800926FE1 /* SettingsViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		740555632605D77C00926FE1 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				740555442605CD4A00926FE1 /* SignInViewController.swift */,
+				740555472605CD5300926FE1 /* SignUpViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7405551F2605CA8D00926FE1 /* Tripper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 740555342605CA9200926FE1 /* Build configuration list for PBXNativeTarget "Tripper" */;
+			buildPhases = (
+				7405551C2605CA8D00926FE1 /* Sources */,
+				7405551D2605CA8D00926FE1 /* Frameworks */,
+				7405551E2605CA8D00926FE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tripper;
+			productName = Tripper;
+			productReference = 740555202605CA8D00926FE1 /* Tripper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		740555182605CA8D00926FE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					7405551F2605CA8D00926FE1 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 7405551B2605CA8D00926FE1 /* Build configuration list for PBXProject "Tripper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 740555172605CA8D00926FE1;
+			productRefGroup = 740555212605CA8D00926FE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7405551F2605CA8D00926FE1 /* Tripper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7405551E2605CA8D00926FE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740555302605CA9200926FE1 /* LaunchScreen.storyboard in Resources */,
+				7405552D2605CA9200926FE1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7405551C2605CA8D00926FE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740555482605CD5300926FE1 /* SignUpViewController.swift in Sources */,
+				7405554D2605CE2D00926FE1 /* TopMenuBarStackView.swift in Sources */,
+				7405555C2605D70E00926FE1 /* TripperTabBarController.swift in Sources */,
+				7405553E2605CD2D00926FE1 /* TripsViewController.swift in Sources */,
+				740555452605CD4A00926FE1 /* SignInViewController.swift in Sources */,
+				740555242605CA8D00926FE1 /* AppDelegate.swift in Sources */,
+				740555662605D7AA00926FE1 /* BookmarksViewController.swift in Sources */,
+				740555422605CD3800926FE1 /* SettingsViewController.swift in Sources */,
+				740555502605CEAB00926FE1 /* MenuBarButton.swift in Sources */,
+				740555262605CA8D00926FE1 /* SceneDelegate.swift in Sources */,
+				7405555F2605D76400926FE1 /* CreateTripViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7405552E2605CA9200926FE1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7405552F2605CA9200926FE1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		740555322605CA9200926FE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		740555332605CA9200926FE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		740555352605CA9200926FE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6XQNTZWU9E;
+				INFOPLIST_FILE = Tripper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Margulan-Daribayev.Tripper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		740555362605CA9200926FE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6XQNTZWU9E;
+				INFOPLIST_FILE = Tripper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Margulan-Daribayev.Tripper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7405551B2605CA8D00926FE1 /* Build configuration list for PBXProject "Tripper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				740555322605CA9200926FE1 /* Debug */,
+				740555332605CA9200926FE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		740555342605CA9200926FE1 /* Build configuration list for PBXNativeTarget "Tripper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				740555352605CA9200926FE1 /* Debug */,
+				740555362605CA9200926FE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 740555182605CA8D00926FE1 /* Project object */;
+}
