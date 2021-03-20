@@ -25,7 +25,6 @@ class TripsViewController: UIViewController {
         tableView.register(TripCardCell.self, forCellReuseIdentifier: TripCardCell.reuseIdentifier)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.separatorStyle = .none
-        tableView.frame = view.bounds
         tableView.delegate = self
         tableView.dataSource = self
         return tableView
@@ -35,6 +34,7 @@ class TripsViewController: UIViewController {
         let menuBar = TopMenuBarStackView()
         return menuBar
     }()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -24,7 +24,7 @@ class TripCardCell: UITableViewCell {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.clipsToBounds = true
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleToFill
         return imageView
     }()
     
@@ -108,6 +108,11 @@ class TripCardCell: UITableViewCell {
         NSLayoutConstraint.activate([
             bookmarkButton.topAnchor.constraint(equalTo: self.topAnchor),
             bookmarkButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -leftRightPadding),
+            
+            cardImageView.topAnchor.constraint(equalTo: self.topAnchor),
+            cardImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            cardImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            cardImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             
             yearDurationLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -bottomPadding),
             yearDurationLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: leftRightPadding),
