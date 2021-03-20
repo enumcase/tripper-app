@@ -9,6 +9,11 @@ import UIKit
 
 class TripsViewController: UIViewController {
 
+    let tripsTableView: UITableView = {
+        let tableView = UITableView()
+        return tableView
+    }()
+    
     let topMenuBar: TopMenuBarStackView = {
         let menuBar = TopMenuBarStackView()
         return menuBar
@@ -17,6 +22,10 @@ class TripsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        
+        tripsTableView.delegate = self
+        tripsTableView.dataSource = self
+        
         view.addSubview(topMenuBar)
         
         setTopMenuBarConstraints()
@@ -76,4 +85,16 @@ class TripsViewController: UIViewController {
         ])
     }
 
+}
+
+extension TripsViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    
 }
