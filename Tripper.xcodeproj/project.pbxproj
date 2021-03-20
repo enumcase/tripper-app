@@ -26,6 +26,7 @@
 		740555762605F12900926FE1 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740555752605F12900926FE1 /* Follower.swift */; };
 		7405557A2605F42D00926FE1 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740555792605F42D00926FE1 /* Images.swift */; };
 		7405557F2605F87A00926FE1 /* SeasonImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405557E2605F87A00926FE1 /* SeasonImages.swift */; };
+		74055582260601B700926FE1 /* ButtonImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74055581260601B700926FE1 /* ButtonImages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		740555752605F12900926FE1 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		740555792605F42D00926FE1 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		7405557E2605F87A00926FE1 /* SeasonImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonImages.swift; sourceTree = "<group>"; };
+		74055581260601B700926FE1 /* ButtonImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonImages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 			children = (
 				740555792605F42D00926FE1 /* Images.swift */,
 				7405557E2605F87A00926FE1 /* SeasonImages.swift */,
+				74055581260601B700926FE1 /* ButtonImages.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				740555242605CA8D00926FE1 /* AppDelegate.swift in Sources */,
 				740555662605D7AA00926FE1 /* BookmarksViewController.swift in Sources */,
 				740555422605CD3800926FE1 /* SettingsViewController.swift in Sources */,
+				74055582260601B700926FE1 /* ButtonImages.swift in Sources */,
 				7405557F2605F87A00926FE1 /* SeasonImages.swift in Sources */,
 				740555502605CEAB00926FE1 /* MenuBarButton.swift in Sources */,
 				740555262605CA8D00926FE1 /* SceneDelegate.swift in Sources */,

@@ -9,11 +9,7 @@ import UIKit
 
 class TopMenuBarStackView: UIStackView {
     
-    let summerButton: MenuBarButton = {
-        let button = MenuBarButton(text: "Summer")
-        button.isSelected = true
-        return button
-    }()
+    let summerButton = MenuBarButton(text: "Summer")
     let springButton = MenuBarButton(text: "Spring")
     let fallButton = MenuBarButton(text: "Fall")
     let winterButton = MenuBarButton(text: "Winter")
@@ -33,6 +29,7 @@ class TopMenuBarStackView: UIStackView {
         alignment = .bottom
         
         summerButton.setContentHuggingPriority(UILayoutPriority(rawValue: 251), for: .horizontal)
+        summerButton.isSelected = true
     }
     
     required init(coder: NSCoder) {

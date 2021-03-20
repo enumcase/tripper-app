@@ -9,7 +9,6 @@ import UIKit
 
 enum Images {
     static let main = UIImage(named: "main")
-    static let kyoto = UIImage(named: "japan")
-    static let astana = UIImage(named: "astana")
-    static let london = UIImage(named: "london")
+    
+    // Static temporary data for testing purposes only
 }
