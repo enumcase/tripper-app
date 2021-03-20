@@ -20,7 +20,6 @@ class MenuBarButton: UIButton {
         setTitleColor(.black, for: .normal)
         setTitleColor(.systemBlue, for: .selected)
         setTitle(text, for: .normal)
-        
         titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
     }
     

@@ -23,13 +23,6 @@ class TripsViewController: UIViewController {
         configButtons()
     }
     
-    private func setTopMenuBarConstraints() {
-        NSLayoutConstraint.activate([
-            topMenuBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
-            topMenuBar.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20)
-        ])
-    }
-    
     private func configButtons() {
         topMenuBar.summerButton.addTarget(self, action: #selector(didTapSummerButton), for: .touchUpInside)
         topMenuBar.springButton.addTarget(self, action: #selector(didTapSpringButton), for: .touchUpInside)
@@ -37,9 +30,12 @@ class TripsViewController: UIViewController {
         topMenuBar.winterButton.addTarget(self, action: #selector(didTapWinterButton), for: .touchUpInside)
     }
     
+    /// Button functions
+    
     @objc private func didTapSummerButton() {
         for button in topMenuBar.arrangedSubviews as! [UIButton] {
             button.isSelected = false
+            button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
         }
         
         topMenuBar.summerButton.isSelected = true
@@ -48,6 +44,7 @@ class TripsViewController: UIViewController {
     @objc private func didTapSpringButton() {
         for button in topMenuBar.arrangedSubviews as! [UIButton] {
             button.isSelected = false
+            button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
         }
         
         topMenuBar.springButton.isSelected = true
@@ -56,6 +53,7 @@ class TripsViewController: UIViewController {
     @objc private func didTapFallButton() {
         for button in topMenuBar.arrangedSubviews as! [UIButton] {
             button.isSelected = false
+            button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
         }
         
         topMenuBar.fallButton.isSelected = true
@@ -64,9 +62,18 @@ class TripsViewController: UIViewController {
     @objc private func didTapWinterButton() {
         for button in topMenuBar.arrangedSubviews as! [UIButton] {
             button.isSelected = false
+            button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
         }
         
         topMenuBar.winterButton.isSelected = true
+    }
+    
+    /// Constraints
+    private func setTopMenuBarConstraints() {
+        NSLayoutConstraint.activate([
+            topMenuBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
+            topMenuBar.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20)
+        ])
     }
 
 }

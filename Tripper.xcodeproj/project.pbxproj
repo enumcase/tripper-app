@@ -20,6 +20,12 @@
 		7405555C2605D70E00926FE1 /* TripperTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405555B2605D70E00926FE1 /* TripperTabBarController.swift */; };
 		7405555F2605D76400926FE1 /* CreateTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405555E2605D76400926FE1 /* CreateTripViewController.swift */; };
 		740555662605D7AA00926FE1 /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740555652605D7AA00926FE1 /* BookmarksViewController.swift */; };
+		7405556B2605EED900926FE1 /* TripCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405556A2605EED900926FE1 /* TripCardCell.swift */; };
+		740555702605F01A00926FE1 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405556F2605F01A00926FE1 /* Trip.swift */; };
+		740555732605F03F00926FE1 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740555722605F03F00926FE1 /* Season.swift */; };
+		740555762605F12900926FE1 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740555752605F12900926FE1 /* Follower.swift */; };
+		7405557A2605F42D00926FE1 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740555792605F42D00926FE1 /* Images.swift */; };
+		7405557F2605F87A00926FE1 /* SeasonImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405557E2605F87A00926FE1 /* SeasonImages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,12 @@
 		7405555B2605D70E00926FE1 /* TripperTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripperTabBarController.swift; sourceTree = "<group>"; };
 		7405555E2605D76400926FE1 /* CreateTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTripViewController.swift; sourceTree = "<group>"; };
 		740555652605D7AA00926FE1 /* BookmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
+		7405556A2605EED900926FE1 /* TripCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCardCell.swift; sourceTree = "<group>"; };
+		7405556F2605F01A00926FE1 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		740555722605F03F00926FE1 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
+		740555752605F12900926FE1 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		740555792605F42D00926FE1 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		7405557E2605F87A00926FE1 /* SeasonImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonImages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,7 @@
 				740555392605CB1500926FE1 /* Views */,
 				7405554A2605CDD400926FE1 /* Models */,
 				7405554B2605CDFC00926FE1 /* Managers */,
+				740555782605F42000926FE1 /* Constants */,
 				7405553A2605CB1E00926FE1 /* Resources */,
 				740555312605CA9200926FE1 /* Info.plist */,
 			);
@@ -83,6 +96,7 @@
 		740555392605CB1500926FE1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7405556D2605EEDB00926FE1 /* Cells */,
 				740555572605D10700926FE1 /* StackViews */,
 				740555582605D11000926FE1 /* Buttons */,
 				740555532605D0DD00926FE1 /* Labels */,
@@ -113,6 +127,9 @@
 		7405554A2605CDD400926FE1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7405556F2605F01A00926FE1 /* Trip.swift */,
+				740555722605F03F00926FE1 /* Season.swift */,
+				740555752605F12900926FE1 /* Follower.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -174,6 +191,23 @@
 				740555472605CD5300926FE1 /* SignUpViewController.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		7405556D2605EEDB00926FE1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7405556A2605EED900926FE1 /* TripCardCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		740555782605F42000926FE1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				740555792605F42D00926FE1 /* Images.swift */,
+				7405557E2605F87A00926FE1 /* SeasonImages.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				740555482605CD5300926FE1 /* SignUpViewController.swift in Sources */,
+				740555762605F12900926FE1 /* Follower.swift in Sources */,
 				7405554D2605CE2D00926FE1 /* TopMenuBarStackView.swift in Sources */,
 				7405555C2605D70E00926FE1 /* TripperTabBarController.swift in Sources */,
 				7405553E2605CD2D00926FE1 /* TripsViewController.swift in Sources */,
@@ -253,8 +288,13 @@
 				740555242605CA8D00926FE1 /* AppDelegate.swift in Sources */,
 				740555662605D7AA00926FE1 /* BookmarksViewController.swift in Sources */,
 				740555422605CD3800926FE1 /* SettingsViewController.swift in Sources */,
+				7405557F2605F87A00926FE1 /* SeasonImages.swift in Sources */,
 				740555502605CEAB00926FE1 /* MenuBarButton.swift in Sources */,
 				740555262605CA8D00926FE1 /* SceneDelegate.swift in Sources */,
+				740555702605F01A00926FE1 /* Trip.swift in Sources */,
+				7405556B2605EED900926FE1 /* TripCardCell.swift in Sources */,
+				7405557A2605F42D00926FE1 /* Images.swift in Sources */,
+				740555732605F03F00926FE1 /* Season.swift in Sources */,
 				7405555F2605D76400926FE1 /* CreateTripViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
