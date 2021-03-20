@@ -9,16 +9,17 @@ import UIKit
 
 class TripsViewController: UIViewController {
     // Data for testing purposes
-    var followers: [Follower] = [
-        Follower(id: 1, name: "Anime", profileImage: "anime"),
-        Follower(id: 2, name: "Kayden", profileImage: "kayden")
-    ]
+//    var followers: [Follower] = [
+//        Follower(followerId: 1, name: "Anime", profileImage: "anime"),
+//        Follower(followerId: 2, name: "Kayden", profileImage: "kayden")
+//    ]
     
-    lazy var trips: [Trip] = [
-        Trip(season: .spring, location: "Kyoto", year: 2021, duration: 14, followers: followers, image: "japan"),
-        Trip(season: .summer, location: "Nur-Sultan", year: 2021, duration: 7, followers: followers, image: "astana"),
-        Trip(season: .summer, location: "London", year: 2021, duration: 10, followers: followers, image: "london")
-    ]
+    var trips: [Trip] = []
+//    lazy var trips: [Trip] = [
+//        Trip(season: .spring, location: "Kyoto", year: 2021, duration: 14, followers: followers, image: "japan"),
+//        Trip(season: .summer, location: "Nur-Sultan", year: 2021, duration: 7, followers: followers, image: "astana"),
+//        Trip(season: .summer, location: "London", year: 2021, duration: 10, followers: followers, image: "london")
+//    ]
     
     lazy var tripsTableView: UITableView = {
         let tableView = UITableView()
@@ -46,6 +47,27 @@ class TripsViewController: UIViewController {
         setTopMenuBarConstraints()
         configButtons()
         setTableViewConstraints()
+        
+        getTripsData()
+    }
+    
+    private func getTripsData() {
+        NetworkManager.shared.getTrips { [weak self] result in
+            guard let self = self else { return }
+            
+            switch result {
+            
+            case .success(let trips):
+                print(trips)
+                self.trips = trips
+                DispatchQueue.main.async {
+                    self.tripsTableView.reloadData()
+                }
+            case .failure(let error):
+                #warning("THINK about adding UIAlertVC")
+                print(error.rawValue)
+            }
+        }
     }
     
     private func configButtons() {
@@ -146,6 +168,5 @@ extension TripsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 28
     }
-    
     
 }

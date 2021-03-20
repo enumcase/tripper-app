@@ -8,7 +8,7 @@
 import Foundation
 
 struct Follower: Codable, Hashable {
-    let id: Int
+    let followerId: Int
     let name: String
-    let profileImage: String
+    let image: String
 }

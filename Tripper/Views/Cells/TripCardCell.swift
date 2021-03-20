@@ -85,28 +85,35 @@ class TripCardCell: UITableViewCell {
     }
     
     func setCardData(for trip: Trip) {
-        self.cardImageView.image = UIImage(named: trip.image)
         setSeasonImageView(of: trip)
-        cardLocationLabel.text = trip.location
+        cardLocationLabel.text = trip.name
         if let duration = trip.duration {
-            yearDurationLabel.text = "\(trip.season.rawValue) \(trip.year) - \(duration) days"
+            yearDurationLabel.text = "\(trip.season) \(trip.year) - \(duration) days"
         } else {
-            yearDurationLabel.text = "\(trip.season.rawValue) \(trip.year)"
+            yearDurationLabel.text = "\(trip.season) \(trip.year)"
+        }
+        
+        NetworkManager.shared.downloadImage(from: trip.image) { [weak self] image in
+            guard let self = self else { return }
+            
+            DispatchQueue.main.async {
+                self.cardImageView.image = image
+            }
         }
         
     }
 
     private func setSeasonImageView(of trip: Trip) {
-        switch trip.season {
-        case .summer:
-            self.seasonImageView.image = SeasonImages.summer
-        case .spring:
-            self.seasonImageView.image = SeasonImages.spring
-        case .fall:
-            self.seasonImageView.image = SeasonImages.fall
-        case .winter:
-            self.seasonImageView.image = SeasonImages.winter
-        }
+//        switch trip.season {
+//        case .summer:
+//            self.seasonImageView.image = SeasonImages.summer
+//        case .spring:
+//            self.seasonImageView.image = SeasonImages.spring
+//        case .fall:
+//            self.seasonImageView.image = SeasonImages.fall
+//        case .winter:
+//            self.seasonImageView.image = SeasonImages.winter
+//        }
     }
     
     @objc private func didTapBookmarkButton() {
