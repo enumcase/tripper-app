@@ -11,15 +11,11 @@ class TripCardCell: UITableViewCell {
 
     var isBookmarked = false
     
-    let darkenedView: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .black
-        view.layer.opacity = 0.15
-        return view
-    }()
+    // UI Elements of cell
     
-    let bookmarkButton: UIButton = {
+    private let darkenedView = DarkenedView()
+    
+    private let bookmarkButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setBackgroundImage(ButtonImages.notBookmarked, for: .normal)
@@ -27,15 +23,15 @@ class TripCardCell: UITableViewCell {
         return button
     }()
     
-    let cardImageView: UIImageView = {
+    private let cardImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.clipsToBounds = true
-        imageView.contentMode = .scaleToFill
+        imageView.contentMode = .scaleAspectFill
         return imageView
     }()
     
-    let seasonImageView: UIImageView = {
+    private let seasonImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.tintColor = .white
@@ -43,7 +39,7 @@ class TripCardCell: UITableViewCell {
         return imageView
     }()
     
-    let cardLocationLabel: UILabel = {
+    private let cardLocationLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .white
@@ -51,7 +47,7 @@ class TripCardCell: UITableViewCell {
         return label
     }()
     
-    let yearDurationLabel: UILabel = {
+    private let yearDurationLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .white

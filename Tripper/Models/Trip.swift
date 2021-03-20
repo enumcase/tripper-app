@@ -12,6 +12,6 @@ struct Trip: Codable, Hashable {
     let name: String
     let year: Int
     let duration: Int?
-//    let followers: [[Follower]]
+    let follower: [Follower]
     let image: String
 }

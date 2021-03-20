@@ -31,6 +31,7 @@
 		74469C9D260638F60018B02C /* NetworkManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469C9C260638F60018B02C /* NetworkManagerError.swift */; };
 		74469CA12606435E0018B02C /* TripperTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469CA02606435D0018B02C /* TripperTextField.swift */; };
 		74469CA6260648B70018B02C /* DataLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469CA5260648B70018B02C /* DataLoadingViewController.swift */; };
+		74469CAA260651C60018B02C /* DarkenedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469CA9260651C60018B02C /* DarkenedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		74469C9C260638F60018B02C /* NetworkManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerError.swift; sourceTree = "<group>"; };
 		74469CA02606435D0018B02C /* TripperTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripperTextField.swift; sourceTree = "<group>"; };
 		74469CA5260648B70018B02C /* DataLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoadingViewController.swift; sourceTree = "<group>"; };
+		74469CA9260651C60018B02C /* DarkenedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkenedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		740555392605CB1500926FE1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				74469CA8260651AA0018B02C /* UIViews */,
 				74469C9F260643410018B02C /* TextFields */,
 				7405556D2605EEDB00926FE1 /* Cells */,
 				740555572605D10700926FE1 /* StackViews */,
@@ -233,6 +236,14 @@
 			path = TextFields;
 			sourceTree = "<group>";
 		};
+		74469CA8260651AA0018B02C /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				74469CA9260651C60018B02C /* DarkenedView.swift */,
+			);
+			path = UIViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -317,6 +328,7 @@
 				74055582260601B700926FE1 /* ButtonImages.swift in Sources */,
 				74469C9D260638F60018B02C /* NetworkManagerError.swift in Sources */,
 				7405557F2605F87A00926FE1 /* SeasonImages.swift in Sources */,
+				74469CAA260651C60018B02C /* DarkenedView.swift in Sources */,
 				740555502605CEAB00926FE1 /* MenuBarButton.swift in Sources */,
 				740555262605CA8D00926FE1 /* SceneDelegate.swift in Sources */,
 				740555702605F01A00926FE1 /* Trip.swift in Sources */,
