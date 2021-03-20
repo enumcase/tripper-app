@@ -9,6 +9,4 @@ import UIKit
 
 enum Images {
     static let main = UIImage(named: "main")
-    
-    // Static temporary data for testing purposes only
 }

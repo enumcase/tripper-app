@@ -14,7 +14,7 @@ final class NetworkManager {
     
     private init() {}
     
-    private let baseURL = "https://73ebae240f59.ngrok.io/"
+    private let baseURL = "https://075d1cc7eea2.ngrok.io/"
     
     func getTrips(completion: @escaping (Result<[Trip], NetworkManagerError>) -> Void) {
         let endpoint = baseURL + "trip"
@@ -31,7 +31,7 @@ final class NetworkManager {
                 return
             }
             
-            guard let response = response else {
+            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
                 completion(.failure(.invalidResponse))
                 return
             }

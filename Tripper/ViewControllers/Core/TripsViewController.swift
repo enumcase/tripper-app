@@ -7,21 +7,15 @@
 
 import UIKit
 
-class TripsViewController: UIViewController {
-    // Data for testing purposes
-//    var followers: [Follower] = [
-//        Follower(followerId: 1, name: "Anime", profileImage: "anime"),
-//        Follower(followerId: 2, name: "Kayden", profileImage: "kayden")
-//    ]
+class TripsViewController: DataLoadingViewController {
     
-    var trips: [Trip] = []
-//    lazy var trips: [Trip] = [
-//        Trip(season: .spring, location: "Kyoto", year: 2021, duration: 14, followers: followers, image: "japan"),
-//        Trip(season: .summer, location: "Nur-Sultan", year: 2021, duration: 7, followers: followers, image: "astana"),
-//        Trip(season: .summer, location: "London", year: 2021, duration: 10, followers: followers, image: "london")
-//    ]
+    private var trips: [Trip] = []
+    private var summerTrips: [Trip] = []
+    private var springTrips: [Trip] = []
+    private var fallTrips: [Trip] = []
+    private var winterTrips: [Trip] = []
     
-    lazy var tripsTableView: UITableView = {
+    private lazy var tripsTableView: UITableView = {
         let tableView = UITableView()
         tableView.register(TripCardCell.self, forCellReuseIdentifier: TripCardCell.reuseIdentifier)
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -31,7 +25,7 @@ class TripsViewController: UIViewController {
         return tableView
     }()
     
-    let topMenuBar: TopMenuBarStackView = {
+    private let topMenuBar: TopMenuBarStackView = {
         let menuBar = TopMenuBarStackView()
         return menuBar
     }()
@@ -52,13 +46,13 @@ class TripsViewController: UIViewController {
     }
     
     private func getTripsData() {
+        showLoadingView()
         NetworkManager.shared.getTrips { [weak self] result in
             guard let self = self else { return }
             
             switch result {
             
             case .success(let trips):
-                print(trips)
                 self.trips = trips
                 DispatchQueue.main.async {
                     self.tripsTableView.reloadData()
@@ -67,7 +61,27 @@ class TripsViewController: UIViewController {
                 #warning("THINK about adding UIAlertVC")
                 print(error.rawValue)
             }
+            
+            self.dismissLoadingView()
         }
+    }
+    
+    private func getSeasonTrips() {
+        summerTrips = trips.filter({ (trip) -> Bool in
+            trip.season == "Summer"
+        })
+        
+        springTrips = trips.filter({ (trip) -> Bool in
+            trip.season == "Spring"
+        })
+        
+        fallTrips = trips.filter({ (trip) -> Bool in
+            trip.season == "Summer"
+        })
+        
+        winterTrips = trips.filter({ (trip) -> Bool in
+            trip.season == "Summer"
+        })
     }
     
     private func configButtons() {

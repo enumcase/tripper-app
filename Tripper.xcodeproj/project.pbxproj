@@ -29,6 +29,8 @@
 		74055582260601B700926FE1 /* ButtonImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74055581260601B700926FE1 /* ButtonImages.swift */; };
 		74469C9A260635750018B02C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469C99260635750018B02C /* NetworkManager.swift */; };
 		74469C9D260638F60018B02C /* NetworkManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469C9C260638F60018B02C /* NetworkManagerError.swift */; };
+		74469CA12606435E0018B02C /* TripperTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469CA02606435D0018B02C /* TripperTextField.swift */; };
+		74469CA6260648B70018B02C /* DataLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469CA5260648B70018B02C /* DataLoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		74055581260601B700926FE1 /* ButtonImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonImages.swift; sourceTree = "<group>"; };
 		74469C99260635750018B02C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		74469C9C260638F60018B02C /* NetworkManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerError.swift; sourceTree = "<group>"; };
+		74469CA02606435D0018B02C /* TripperTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripperTextField.swift; sourceTree = "<group>"; };
+		74469CA5260648B70018B02C /* DataLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 		740555392605CB1500926FE1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				74469C9F260643410018B02C /* TextFields */,
 				7405556D2605EEDB00926FE1 /* Cells */,
 				740555572605D10700926FE1 /* StackViews */,
 				740555582605D11000926FE1 /* Buttons */,
@@ -126,6 +131,7 @@
 			children = (
 				740555622605D76800926FE1 /* Core */,
 				740555632605D77C00926FE1 /* Auth */,
+				74469CA5260648B70018B02C /* DataLoadingViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -219,6 +225,14 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		74469C9F260643410018B02C /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				74469CA02606435D0018B02C /* TripperTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -292,10 +306,12 @@
 				740555482605CD5300926FE1 /* SignUpViewController.swift in Sources */,
 				740555762605F12900926FE1 /* Follower.swift in Sources */,
 				7405554D2605CE2D00926FE1 /* TopMenuBarStackView.swift in Sources */,
+				74469CA12606435E0018B02C /* TripperTextField.swift in Sources */,
 				7405555C2605D70E00926FE1 /* TripperTabBarController.swift in Sources */,
 				7405553E2605CD2D00926FE1 /* TripsViewController.swift in Sources */,
 				740555452605CD4A00926FE1 /* SignInViewController.swift in Sources */,
 				740555242605CA8D00926FE1 /* AppDelegate.swift in Sources */,
+				74469CA6260648B70018B02C /* DataLoadingViewController.swift in Sources */,
 				740555662605D7AA00926FE1 /* BookmarksViewController.swift in Sources */,
 				740555422605CD3800926FE1 /* SettingsViewController.swift in Sources */,
 				74055582260601B700926FE1 /* ButtonImages.swift in Sources */,
