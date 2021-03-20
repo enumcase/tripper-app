@@ -8,6 +8,7 @@
 import Foundation
 
 struct Follower: Codable, Hashable {
+    let id: Int
     let name: String
     let profileImage: String
 }
