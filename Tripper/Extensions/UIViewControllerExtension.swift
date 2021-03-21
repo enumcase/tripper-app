@@ -13,10 +13,14 @@ extension UIViewController {
         DispatchQueue.main.async {
             let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
             alertVC.addAction(UIAlertAction(title: buttonTitle, style: .default))
-//            alertVC.modalPresentationStyle = .overFullScreen
-//            alertVC.modalTransitionStyle = .crossDissolve
             self.present(alertVC, animated: true)
         }
+    }
+    
+    func showEmptyStateView(in view: UIView) {
+        let emptyStateView = EmptyStateView()
+        emptyStateView.frame = view.bounds
+        view.addSubview(emptyStateView)
     }
 
 }
