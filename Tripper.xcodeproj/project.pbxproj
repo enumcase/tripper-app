@@ -25,6 +25,7 @@
 		7405557A2605F42D00926FE1 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740555792605F42D00926FE1 /* Images.swift */; };
 		7405557F2605F87A00926FE1 /* SeasonImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405557E2605F87A00926FE1 /* SeasonImages.swift */; };
 		74055582260601B700926FE1 /* ButtonImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74055581260601B700926FE1 /* ButtonImages.swift */; };
+		742776D22611663200B17473 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742776D12611663200B17473 /* EmptyStateView.swift */; };
 		74469C9A260635750018B02C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469C99260635750018B02C /* NetworkManager.swift */; };
 		74469C9D260638F60018B02C /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469C9C260638F60018B02C /* RequestError.swift */; };
 		74469CA12606435E0018B02C /* TripperTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469CA02606435D0018B02C /* TripperTextField.swift */; };
@@ -56,6 +57,7 @@
 		740555792605F42D00926FE1 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		7405557E2605F87A00926FE1 /* SeasonImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonImages.swift; sourceTree = "<group>"; };
 		74055581260601B700926FE1 /* ButtonImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonImages.swift; sourceTree = "<group>"; };
+		742776D12611663200B17473 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		74469C99260635750018B02C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		74469C9C260638F60018B02C /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 		74469CA02606435D0018B02C /* TripperTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripperTextField.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				74469CA9260651C60018B02C /* DarkenedView.swift */,
+				742776D12611663200B17473 /* EmptyStateView.swift */,
 			);
 			path = UIViews;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				740555242605CA8D00926FE1 /* AppDelegate.swift in Sources */,
 				74469CA6260648B70018B02C /* DataLoadingViewController.swift in Sources */,
 				740555662605D7AA00926FE1 /* BookmarksViewController.swift in Sources */,
+				742776D22611663200B17473 /* EmptyStateView.swift in Sources */,
 				740555422605CD3800926FE1 /* SettingsViewController.swift in Sources */,
 				74055582260601B700926FE1 /* ButtonImages.swift in Sources */,
 				74469C9D260638F60018B02C /* RequestError.swift in Sources */,
@@ -488,7 +492,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Margulan-Daribayev.Tripper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -507,7 +511,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Margulan-Daribayev.Tripper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
