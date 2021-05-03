@@ -17,20 +17,11 @@ class SignInViewController: UIViewController {
         
         view.backgroundColor = .systemBackground
         
-        let childView = UIHostingController(rootView: LoginView(backgroundColor: nil, titleColor: nil, model: LoginViewModel()))
-        addChild(childView)
-        childView.view.frame = view.bounds
-        view.addSubview(childView.view)
-        childView.didMove(toParent: self)
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        if SignInViewController.isSignedIn {
-            print("Yeeey")
-            navigationController?.pushViewController(TripperTabBarController(), animated: true)
-        }
+//        let childView = UIHostingController(rootView: LoginView(backgroundColor: nil, titleColor: nil, model: LoginViewModel()))
+//        addChild(childView)
+//        childView.view.frame = view.bounds
+//        view.addSubview(childView.view)
+//        childView.didMove(toParent: self)
     }
 
 }
