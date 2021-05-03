@@ -9,6 +9,8 @@ import UIKit
 
 class CreateTripViewController: UIViewController {
     
+    private var createdTrip: Trip!
+    
     private let placeholderImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -29,6 +31,8 @@ class CreateTripViewController: UIViewController {
         return button
     }()
     
+    private let createTripButton = TripperMainButton(title: "Create Trip")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -36,7 +40,23 @@ class CreateTripViewController: UIViewController {
         view.addSubview(placeholderImageView)
         view.addSubview(darkenedView)
         view.addSubview(imageAddButton)
+        view.addSubview(createTripButton)
         setConstraints()
+        
+        imageAddButton.addTarget(self, action: #selector(imageAddButtonTapped), for: .touchUpInside)
+        createTripButton.addTarget(self, action: #selector(didTapCreateTripButton), for: .touchUpInside)
+    }
+    
+    @objc private func imageAddButtonTapped() {
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.allowsEditing = true
+        picker.sourceType = .photoLibrary
+        present(picker, animated: true)
+    }
+    
+    @objc private func didTapCreateTripButton() {
+        print("Yay! Trip created")
     }
 
     private func setConstraints() {
@@ -56,8 +76,22 @@ class CreateTripViewController: UIViewController {
             imageAddButton.centerYAnchor.constraint(equalTo: placeholderImageView.centerYAnchor),
             imageAddButton.centerXAnchor.constraint(equalTo: placeholderImageView.centerXAnchor),
             imageAddButton.widthAnchor.constraint(equalToConstant: 64),
-            imageAddButton.heightAnchor.constraint(equalTo: imageAddButton.widthAnchor)
+            imageAddButton.heightAnchor.constraint(equalTo: imageAddButton.widthAnchor),
+            
+            createTripButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -36),
+            createTripButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            createTripButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
         ])
+    }
+    
+}
+
+extension CreateTripViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let pickedImage = info[.editedImage] as? UIImage else { return }
+        self.placeholderImageView.image = pickedImage
+        picker.dismiss(animated: true)
     }
     
 }
