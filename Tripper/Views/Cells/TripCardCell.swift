@@ -11,6 +11,8 @@ class TripCardCell: UITableViewCell {
 
     var isBookmarked = false
     
+    weak var delegate: TripsViewController!
+    
     // UI Elements of cell
     
     private let darkenedView = DarkenedView()
@@ -76,6 +78,16 @@ class TripCardCell: UITableViewCell {
         bookmarkButton.addTarget(self, action: #selector(didTapBookmarkButton), for: .touchUpInside)
     }
     
+    @objc func didTapBookmarkButton() {
+        isBookmarked.toggle()
+        bookmarkButton.setBackgroundImage(
+            self.isBookmarked ? ButtonImages.bookmarked : ButtonImages.notBookmarked,
+            for: .normal
+        )
+        
+        delegate.handleBookmarkAction(for: self)
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -89,14 +101,22 @@ class TripCardCell: UITableViewCell {
             yearDurationLabel.text = "\(trip.season) \(trip.year)"
         }
         
-        NetworkManager.shared.downloadImage(from: trip.image) { [weak self] image in
-            guard let self = self else { return }
-            
-            DispatchQueue.main.async {
-                self.cardImageView.image = image
-            }
-        }
+        #warning("Uncomment when DB is redone")
+//        NetworkManager.shared.downloadImage(from: trip.image) { [weak self] image in
+//            guard let self = self else { return }
+//
+//            DispatchQueue.main.async {
+//                self.cardImageView.image = image
+//            }
+//        }
         
+        cardImageView.image = UIImage(named: trip.image)
+        
+        bookmarkButton.setBackgroundImage(
+            self.isBookmarked ? ButtonImages.bookmarked : ButtonImages.notBookmarked,
+            for: .normal
+        )
+
     }
 
     private func setSeasonImageView(of trip: Trip) {
@@ -114,14 +134,14 @@ class TripCardCell: UITableViewCell {
         }
     }
     
-    @objc private func didTapBookmarkButton() {
-        isBookmarked.toggle()
-        print(isBookmarked)
-        bookmarkButton.setBackgroundImage(
-            self.isBookmarked ? ButtonImages.bookmarked : ButtonImages.notBookmarked,
-            for: .normal
-        )
-    }
+//    @objc private func didTapBookmarkButton() {
+//        isBookmarked.toggle()
+//        print(isBookmarked)
+//        bookmarkButton.setBackgroundImage(
+//            self.isBookmarked ? ButtonImages.bookmarked : ButtonImages.notBookmarked,
+//            for: .normal
+//        )
+//    }
     
     private func setConstraints() {
         
