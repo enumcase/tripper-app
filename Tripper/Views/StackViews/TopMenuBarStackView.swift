@@ -29,7 +29,6 @@ class TopMenuBarStackView: UIStackView {
         alignment = .bottom
         
         summerButton.setContentHuggingPriority(UILayoutPriority(rawValue: 251), for: .horizontal)
-        summerButton.isSelected = true
     }
     
     required init(coder: NSCoder) {
