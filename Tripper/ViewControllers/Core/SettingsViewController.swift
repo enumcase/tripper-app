@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Firebase
+//import Firebase
 
 class SettingsViewController: UIViewController {
     
@@ -23,15 +23,15 @@ class SettingsViewController: UIViewController {
     }
     
     @objc func didTapLogOutButton() {
-        do {
-            try Auth.auth().signOut()
-            LoginViewModel().$logged.wrappedValue = false
-            let vc = SignInViewController()
-            vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true)
-        } catch {
-            print("Error while logging out")
-        }
+//        do {
+//            try Auth.auth().signOut()
+//            LoginViewModel().$logged.wrappedValue = false
+//            let vc = SignInViewController()
+//            vc.modalPresentationStyle = .fullScreen
+//            present(vc, animated: true)
+//        } catch {
+//            print("Error while logging out")
+//        }
     }
     
     private func setConstraints() {
