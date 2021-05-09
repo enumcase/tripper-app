@@ -15,3 +15,9 @@ struct Trip: Codable, Hashable {
     let follower: [Follower]
     let image: String
 }
+
+// Temporary solution for keeping track of bookmarked trips
+struct BookmarkedTrip: Codable, Hashable {
+    let trip: Trip
+    var isBookmarked: Bool
+}

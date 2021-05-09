@@ -25,6 +25,7 @@
 		7405557A2605F42D00926FE1 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740555792605F42D00926FE1 /* Images.swift */; };
 		7405557F2605F87A00926FE1 /* SeasonImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405557E2605F87A00926FE1 /* SeasonImages.swift */; };
 		74055582260601B700926FE1 /* ButtonImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74055581260601B700926FE1 /* ButtonImages.swift */; };
+		742383D32646D1C000155C21 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742383D22646D1C000155C21 /* SignUpViewController.swift */; };
 		742776D22611663200B17473 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742776D12611663200B17473 /* EmptyStateView.swift */; };
 		74469C9A260635750018B02C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469C99260635750018B02C /* NetworkManager.swift */; };
 		74469C9D260638F60018B02C /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469C9C260638F60018B02C /* RequestError.swift */; };
@@ -57,6 +58,7 @@
 		740555792605F42D00926FE1 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		7405557E2605F87A00926FE1 /* SeasonImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonImages.swift; sourceTree = "<group>"; };
 		74055581260601B700926FE1 /* ButtonImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonImages.swift; sourceTree = "<group>"; };
+		742383D22646D1C000155C21 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		742776D12611663200B17473 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		74469C99260635750018B02C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		74469C9C260638F60018B02C /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 		740555632605D77C00926FE1 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				742383D22646D1C000155C21 /* SignUpViewController.swift */,
 				740555442605CD4A00926FE1 /* SignInViewController.swift */,
 			);
 			path = Auth;
@@ -325,6 +328,7 @@
 				74469CAE260666ED0018B02C /* PersistenceManager.swift in Sources */,
 				7405554D2605CE2D00926FE1 /* TopMenuBarStackView.swift in Sources */,
 				74469CA12606435E0018B02C /* TripperTextField.swift in Sources */,
+				742383D32646D1C000155C21 /* SignUpViewController.swift in Sources */,
 				7405555C2605D70E00926FE1 /* TripperTabBarController.swift in Sources */,
 				7405553E2605CD2D00926FE1 /* TripsViewController.swift in Sources */,
 				740555452605CD4A00926FE1 /* SignInViewController.swift in Sources */,
