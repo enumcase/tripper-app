@@ -1,3 +1,3 @@
 # tripper-app
 
-Mini social media app idea
+Social media app idea.
