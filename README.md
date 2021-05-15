@@ -1,3 +1,3 @@
-# tripper-app
+# Tripper - personal project.
 
 Social media app idea.
