@@ -1,3 +1,3 @@
 # Tripper - personal project.
 
-Social media app idea.
+🌏 Social media app idea.
