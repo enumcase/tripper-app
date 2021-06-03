@@ -32,6 +32,12 @@ class SettingsViewController: UIViewController {
 //        } catch {
 //            print("Error while logging out")
 //        }
+        
+        AuthManager.shared.userIsSignedIn = false
+        
+        let signInVC = SignInViewController()
+        signInVC.modalPresentationStyle = .fullScreen
+        present(signInVC, animated: true)
     }
     
     private func setConstraints() {
