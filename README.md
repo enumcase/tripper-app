@@ -1,3 +1,3 @@
-# tripper-app
+# Tripper - social media app for travelers
 
-Mini social media app idea
+🌏 Social media app idea.
