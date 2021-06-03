@@ -9,8 +9,10 @@ import UIKit
 
 class TripperTextField: UITextField {
 
-    init() {
+    init(placeholder: String) {
         super.init(frame: .zero)
+        translatesAutoresizingMaskIntoConstraints = false
+        self.placeholder = placeholder
     }
     
     required init?(coder: NSCoder) {
