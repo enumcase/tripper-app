@@ -16,8 +16,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: windowScene)
+        
+        if AuthManager.shared.userIsSignedIn {
+            window.rootViewController = TripperTabBarController()
+        } else {
+            let signInVC = SignInViewController()
+            signInVC.title = "Sign In"
+            signInVC.navigationItem.largeTitleDisplayMode = .always
+            signInVC.navigationController?.navigationBar.prefersLargeTitles = true
+            
+            window.rootViewController = UINavigationController(rootViewController: signInVC)
+        }
+        
         window.makeKeyAndVisible()
-        window.rootViewController = TripperTabBarController()
       
         self.window = window
     }

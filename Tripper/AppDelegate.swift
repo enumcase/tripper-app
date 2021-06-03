@@ -19,8 +19,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //FirebaseApp.configure()
         
         let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = TripperTabBarController()
+        
+        if AuthManager.shared.userIsSignedIn {
+            window.rootViewController = TripperTabBarController()
+        } else {
+            let signInVC = SignInViewController()
+            signInVC.title = "Sign In"
+            signInVC.navigationItem.largeTitleDisplayMode = .always
+            signInVC.navigationController?.navigationBar.prefersLargeTitles = true
+            
+            window.rootViewController = UINavigationController(rootViewController: signInVC)
+        }
+        
         window.makeKeyAndVisible()
+        
         self.window = window
         
         return true
