@@ -14,7 +14,7 @@ class TripperMainButton: UIButton {
         translatesAutoresizingMaskIntoConstraints = false
         clipsToBounds = true
         heightAnchor.constraint(equalToConstant: 50).isActive = true
-        layer.cornerRadius = 18
+        layer.cornerRadius = 16
         backgroundColor = .systemBlue
         setTitle(title, for: .normal)
     }
