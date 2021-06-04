@@ -24,9 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window.rootViewController = TripperTabBarController()
         } else {
             let signInVC = SignInViewController()
-            signInVC.title = "Sign In"
-            signInVC.navigationItem.largeTitleDisplayMode = .always
-            signInVC.navigationController?.navigationBar.prefersLargeTitles = true
             
             window.rootViewController = UINavigationController(rootViewController: signInVC)
         }

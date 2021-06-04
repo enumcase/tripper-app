@@ -21,9 +21,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.rootViewController = TripperTabBarController()
         } else {
             let signInVC = SignInViewController()
-            signInVC.title = "Sign In"
-            signInVC.navigationItem.largeTitleDisplayMode = .always
-            signInVC.navigationController?.navigationBar.prefersLargeTitles = true
             
             window.rootViewController = UINavigationController(rootViewController: signInVC)
         }
