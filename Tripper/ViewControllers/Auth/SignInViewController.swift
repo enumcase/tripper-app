@@ -30,7 +30,7 @@ class SignInViewController: UIViewController {
         return label
     }()
     
-    private let emailTextField = TripperTextField(placeholder: "Email")
+    private let emailTextField = TripperTextField(placeholder: "Email", keyboardType: .emailAddress)
     
     private let signInButton = TripperMainButton(title: "Sign In")
     
@@ -38,6 +38,10 @@ class SignInViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .systemBackground
+        title = "Sign In"
+        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        navigationItem.largeTitleDisplayMode = .always
+        navigationController?.navigationBar.prefersLargeTitles = true
         
         view.addSubview(balloonImageView)
         view.addSubview(welcomeLabel)
@@ -65,7 +69,7 @@ class SignInViewController: UIViewController {
     
     private func setBalloonImageViewConstraints() {
         NSLayoutConstraint.activate([
-            balloonImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            balloonImageView.topAnchor.constraint(equalTo: view.topAnchor),
             balloonImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             balloonImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             balloonImageView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 50)
