@@ -35,6 +35,7 @@
 		74469CAE260666ED0018B02C /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469CAD260666ED0018B02C /* PersistenceManager.swift */; };
 		74469CCF260687020018B02C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469CCE260687020018B02C /* UIViewControllerExtension.swift */; };
 		74469CD526068ED40018B02C /* TripperMainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469CD426068ED40018B02C /* TripperMainButton.swift */; };
+		74DDF369266B37CF00832232 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DDF368266B37CF00832232 /* UITextFieldExtension.swift */; };
 		74E7ECFF2668C9980005C09D /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E7ECFE2668C9980005C09D /* AuthManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		74469CAD260666ED0018B02C /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		74469CCE260687020018B02C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		74469CD426068ED40018B02C /* TripperMainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripperMainButton.swift; sourceTree = "<group>"; };
+		74DDF368266B37CF00832232 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		74E7ECFE2668C9980005C09D /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -252,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				74469CCE260687020018B02C /* UIViewControllerExtension.swift */,
+				74DDF368266B37CF00832232 /* UITextFieldExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				742383D32646D1C000155C21 /* SignUpViewController.swift in Sources */,
 				7405555C2605D70E00926FE1 /* TripperTabBarController.swift in Sources */,
 				7405553E2605CD2D00926FE1 /* TripsViewController.swift in Sources */,
+				74DDF369266B37CF00832232 /* UITextFieldExtension.swift in Sources */,
 				740555452605CD4A00926FE1 /* SignInViewController.swift in Sources */,
 				74E7ECFF2668C9980005C09D /* AuthManager.swift in Sources */,
 				740555242605CA8D00926FE1 /* AppDelegate.swift in Sources */,
