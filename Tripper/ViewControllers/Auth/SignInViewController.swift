@@ -24,7 +24,7 @@ class SignInViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
         label.textColor = .secondaryLabel
-        label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
+        label.font = UIFont.systemFont(ofSize: 17, weight: .regular)
         label.textAlignment = .center
         label.text = "Welcome back,\nSign in to continue your journeys!"
         return label
@@ -80,7 +80,7 @@ class SignInViewController: UIViewController {
         NSLayoutConstraint.activate([
             welcomeLabel.topAnchor.constraint(equalTo: balloonImageView.bottomAnchor, constant: 16),
             welcomeLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 48),
-            welcomeLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -48),
+            welcomeLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -48)
         ])
     }
     
@@ -88,7 +88,7 @@ class SignInViewController: UIViewController {
         NSLayoutConstraint.activate([
             emailTextField.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 40),
             emailTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            emailTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            emailTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
     }
     
