@@ -32,6 +32,8 @@ class SignInViewController: UIViewController {
     
     private let emailTextField = TripperTextField(placeholder: "Email", keyboardType: .emailAddress)
     
+    private let passwordTextField = TripperTextField(placeholder: "Password", isSecureTextEntry: true)
+    
     private let signInButton = TripperMainButton(title: "Sign In")
     
     override func viewDidLoad() {
@@ -46,9 +48,8 @@ class SignInViewController: UIViewController {
         view.addSubview(balloonImageView)
         view.addSubview(welcomeLabel)
         view.addSubview(emailTextField)
+        view.addSubview(passwordTextField)
         view.addSubview(signInButton)
-        
-        view.sendSubviewToBack(balloonImageView)
         
         setConstraints()
         
@@ -78,6 +79,10 @@ class SignInViewController: UIViewController {
             emailTextField.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 40),
             emailTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             emailTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            
+            passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor),
+            passwordTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            passwordTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             
             signInButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -84),
             signInButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
