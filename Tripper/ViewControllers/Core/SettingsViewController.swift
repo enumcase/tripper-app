@@ -36,8 +36,9 @@ class SettingsViewController: UIViewController {
         AuthManager.shared.userIsSignedIn = false
         
         let signInVC = SignInViewController()
-        signInVC.modalPresentationStyle = .fullScreen
-        present(signInVC, animated: true)
+        let signInNC = UINavigationController(rootViewController: signInVC)
+        signInNC.modalPresentationStyle = .fullScreen
+        present(signInNC, animated: true)
     }
     
     private func setConstraints() {
