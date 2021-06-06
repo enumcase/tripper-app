@@ -50,10 +50,7 @@ class SignInViewController: UIViewController {
         
         view.sendSubviewToBack(balloonImageView)
         
-        setBalloonImageViewConstraints()
-        setWelcomeLabelConstraints()
-        setTextFieldConstraints()
-        setSignInButtonConstraints()
+        setConstraints()
         
         signInButton.addTarget(self, action: #selector(didTapSignInButton), for: .touchUpInside)
     }
@@ -67,33 +64,21 @@ class SignInViewController: UIViewController {
     
     /// Constraints
     
-    private func setBalloonImageViewConstraints() {
+    private func setConstraints() {
         NSLayoutConstraint.activate([
             balloonImageView.topAnchor.constraint(equalTo: view.topAnchor),
             balloonImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             balloonImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            balloonImageView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 50)
-        ])
-    }
-    
-    private func setWelcomeLabelConstraints() {
-        NSLayoutConstraint.activate([
+            balloonImageView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 50),
+            
             welcomeLabel.topAnchor.constraint(equalTo: balloonImageView.bottomAnchor, constant: 16),
             welcomeLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 48),
-            welcomeLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -48)
-        ])
-    }
-    
-    private func setTextFieldConstraints() {
-        NSLayoutConstraint.activate([
+            welcomeLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -48),
+            
             emailTextField.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 40),
             emailTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            emailTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ])
-    }
-    
-    private func setSignInButtonConstraints() {
-        NSLayoutConstraint.activate([
+            emailTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            
             signInButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -84),
             signInButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             signInButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
