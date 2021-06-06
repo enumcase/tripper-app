@@ -11,11 +11,12 @@ class TripperTextField: UITextField {
     
     private let padding = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
 
-    init(placeholder: String, keyboardType: UIKeyboardType = .default) {
+    init(placeholder: String, keyboardType: UIKeyboardType = .default, isSecureTextEntry: Bool = false) {
         super.init(frame: .zero)
         translatesAutoresizingMaskIntoConstraints = false
         self.placeholder = placeholder
         self.keyboardType = keyboardType
+        self.isSecureTextEntry = isSecureTextEntry
         
         heightAnchor.constraint(equalToConstant: 56).isActive = true
         
