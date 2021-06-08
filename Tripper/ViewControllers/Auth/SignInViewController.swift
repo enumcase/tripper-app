@@ -36,6 +36,8 @@ class SignInViewController: UIViewController {
     
     private let signInButton = TripperMainButton(title: "Sign In")
     
+    private let createAccountLabel = CallForActionStackView(questionText: "Don’t have an account?", actionText: "Create account")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,10 +52,13 @@ class SignInViewController: UIViewController {
         view.addSubview(emailTextField)
         view.addSubview(passwordTextField)
         view.addSubview(signInButton)
+        view.addSubview(createAccountLabel)
         
         setConstraints()
         
         signInButton.addTarget(self, action: #selector(didTapSignInButton), for: .touchUpInside)
+        
+        createAccountLabel.actionButton.addTarget(self, action: #selector(didTapCreateAccountButton), for: .touchUpInside)
     }
     
     @objc private func didTapSignInButton() {
@@ -61,6 +66,13 @@ class SignInViewController: UIViewController {
         let tabBarController = TripperTabBarController()
         tabBarController.modalPresentationStyle = .fullScreen
         present(tabBarController, animated: true)
+    }
+    
+    @objc private func didTapCreateAccountButton() {
+        let signUpVC = SignUpViewController()
+        let signUpNC = UINavigationController(rootViewController: signUpVC)
+        signUpNC.modalPresentationStyle = .fullScreen
+        present(signUpNC, animated: true)
     }
     
     /// Constraints
@@ -84,10 +96,21 @@ class SignInViewController: UIViewController {
             passwordTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             passwordTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             
-            signInButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -84),
+            signInButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -118),
             signInButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-            signInButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
+            signInButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            
+            createAccountLabel.topAnchor.constraint(equalTo: signInButton.bottomAnchor, constant: 32),
+            createAccountLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
+            createAccountLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
         ])
     }
 
+}
+
+extension SignInViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
