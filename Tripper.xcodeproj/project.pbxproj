@@ -35,6 +35,7 @@
 		74469CAE260666ED0018B02C /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469CAD260666ED0018B02C /* PersistenceManager.swift */; };
 		74469CCF260687020018B02C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469CCE260687020018B02C /* UIViewControllerExtension.swift */; };
 		74469CD526068ED40018B02C /* TripperMainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469CD426068ED40018B02C /* TripperMainButton.swift */; };
+		74991389266FAC6100E6E34D /* CallForActionStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74991388266FAC6100E6E34D /* CallForActionStackView.swift */; };
 		74DDF369266B37CF00832232 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DDF368266B37CF00832232 /* UITextFieldExtension.swift */; };
 		74E7ECFF2668C9980005C09D /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E7ECFE2668C9980005C09D /* AuthManager.swift */; };
 /* End PBXBuildFile section */
@@ -70,6 +71,7 @@
 		74469CAD260666ED0018B02C /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		74469CCE260687020018B02C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		74469CD426068ED40018B02C /* TripperMainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripperMainButton.swift; sourceTree = "<group>"; };
+		74991388266FAC6100E6E34D /* CallForActionStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallForActionStackView.swift; sourceTree = "<group>"; };
 		74DDF368266B37CF00832232 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		74E7ECFE2668C9980005C09D /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				7405554C2605CE2D00926FE1 /* TopMenuBarStackView.swift */,
+				74991388266FAC6100E6E34D /* CallForActionStackView.swift */,
 			);
 			path = StackViews;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				74469CA6260648B70018B02C /* DataLoadingViewController.swift in Sources */,
 				740555662605D7AA00926FE1 /* BookmarksViewController.swift in Sources */,
 				742776D22611663200B17473 /* EmptyStateView.swift in Sources */,
+				74991389266FAC6100E6E34D /* CallForActionStackView.swift in Sources */,
 				740555422605CD3800926FE1 /* SettingsViewController.swift in Sources */,
 				74055582260601B700926FE1 /* ButtonImages.swift in Sources */,
 				74469C9D260638F60018B02C /* RequestError.swift in Sources */,
