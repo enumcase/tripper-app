@@ -25,6 +25,7 @@
 		7405557A2605F42D00926FE1 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740555792605F42D00926FE1 /* Images.swift */; };
 		7405557F2605F87A00926FE1 /* SeasonImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405557E2605F87A00926FE1 /* SeasonImages.swift */; };
 		74055582260601B700926FE1 /* ButtonImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74055581260601B700926FE1 /* ButtonImages.swift */; };
+		741679FF26739CC200614C08 /* AuthPageImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741679FE26739CC200614C08 /* AuthPageImageView.swift */; };
 		742383D32646D1C000155C21 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742383D22646D1C000155C21 /* SignUpViewController.swift */; };
 		742776D22611663200B17473 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742776D12611663200B17473 /* EmptyStateView.swift */; };
 		74469C9A260635750018B02C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469C99260635750018B02C /* NetworkManager.swift */; };
@@ -61,6 +62,7 @@
 		740555792605F42D00926FE1 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		7405557E2605F87A00926FE1 /* SeasonImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonImages.swift; sourceTree = "<group>"; };
 		74055581260601B700926FE1 /* ButtonImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonImages.swift; sourceTree = "<group>"; };
+		741679FE26739CC200614C08 /* AuthPageImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPageImageView.swift; sourceTree = "<group>"; };
 		742383D22646D1C000155C21 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		742776D12611663200B17473 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		74469C99260635750018B02C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		740555392605CB1500926FE1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				741679FD26739C8A00614C08 /* ImageViews */,
 				74469CA8260651AA0018B02C /* UIViews */,
 				74469C9F260643410018B02C /* TextFields */,
 				7405556D2605EEDB00926FE1 /* Cells */,
@@ -234,6 +237,14 @@
 				74055581260601B700926FE1 /* ButtonImages.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		741679FD26739C8A00614C08 /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				741679FE26739CC200614C08 /* AuthPageImageView.swift */,
+			);
+			path = ImageViews;
 			sourceTree = "<group>";
 		};
 		74469C9F260643410018B02C /* TextFields */ = {
@@ -354,6 +365,7 @@
 				7405557F2605F87A00926FE1 /* SeasonImages.swift in Sources */,
 				74469CAA260651C60018B02C /* DarkenedView.swift in Sources */,
 				740555502605CEAB00926FE1 /* MenuBarButton.swift in Sources */,
+				741679FF26739CC200614C08 /* AuthPageImageView.swift in Sources */,
 				740555262605CA8D00926FE1 /* SceneDelegate.swift in Sources */,
 				740555702605F01A00926FE1 /* Trip.swift in Sources */,
 				7405556B2605EED900926FE1 /* TripCardCell.swift in Sources */,
