@@ -14,6 +14,7 @@ class SignUpViewController: UIViewController {
         
         view.backgroundColor = .systemBackground
         title = "Sign Up"
+        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
         navigationItem.largeTitleDisplayMode = .always
         navigationController?.navigationBar.prefersLargeTitles = true
     }
