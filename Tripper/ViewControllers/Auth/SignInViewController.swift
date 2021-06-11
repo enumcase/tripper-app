@@ -10,14 +10,7 @@ import SwiftUI
 
 class SignInViewController: UIViewController {
     
-    private let balloonImageView: UIImageView = {
-        let iv = UIImageView()
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        iv.clipsToBounds = true
-        iv.contentMode = .scaleAspectFill
-        iv.image = UIImage(named: "main")
-        return iv
-    }()
+    private let balloonImageView = AuthPageImageView()
     
     private let welcomeLabel: UILabel = {
         let label = UILabel()
