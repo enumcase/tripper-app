@@ -11,6 +11,8 @@ class SignUpViewController: UIViewController {
 
     private let balloonImageView = AuthPageImageView()
     
+    private let signUpLabel = AuthPageTextLabel(text: "Sign up to experience the joy\nof trips with other people!")
+    
     private let signUpButton = TripperMainButton(title: "Sign Up")
     
     override func viewDidLoad() {
@@ -24,6 +26,7 @@ class SignUpViewController: UIViewController {
         
         view.addSubview(balloonImageView)
         view.addSubview(signUpButton)
+        view.addSubview(signUpLabel)
         
         setConstraints()
     }
@@ -40,6 +43,10 @@ class SignUpViewController: UIViewController {
             signUpButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -118),
             signUpButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             signUpButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            
+            signUpLabel.topAnchor.constraint(equalTo: balloonImageView.bottomAnchor, constant: 16),
+            signUpLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 48),
+            signUpLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -48)
         ])
     }
 

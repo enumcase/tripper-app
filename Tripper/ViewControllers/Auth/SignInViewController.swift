@@ -12,16 +12,7 @@ class SignInViewController: UIViewController {
     
     private let balloonImageView = AuthPageImageView()
     
-    private let welcomeLabel: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.numberOfLines = 0
-        label.textColor = .secondaryLabel
-        label.font = UIFont.systemFont(ofSize: 17, weight: .regular)
-        label.textAlignment = .center
-        label.text = "Welcome back,\nSign in to continue your journeys!"
-        return label
-    }()
+    private let welcomeLabel = AuthPageTextLabel(text: "Welcome back,\nSign in to continue your journeys!")
     
     private let emailTextField = TripperTextField(placeholder: "Email", keyboardType: .emailAddress)
     
