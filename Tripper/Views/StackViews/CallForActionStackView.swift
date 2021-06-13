@@ -34,9 +34,9 @@ class CallForActionStackView: UIStackView {
         questionLabel.text = questionText
         actionButton.setTitle(actionText, for: .normal)
         
-        spacing = -4
         axis = .horizontal
         alignment = .firstBaseline
+        distribution = .fill
         
         questionLabel.setContentHuggingPriority(UILayoutPriority(rawValue: 251), for: .horizontal)
     }
