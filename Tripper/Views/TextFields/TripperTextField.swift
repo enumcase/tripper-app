@@ -25,6 +25,7 @@ class TripperTextField: UITextField {
         bottomLine.backgroundColor = UIColor.black.withAlphaComponent(0.75).cgColor
         self.borderStyle = .none
         self.layer.addSublayer(bottomLine)
+        invalidateIntrinsicContentSize()
     }
     
     required init?(coder: NSCoder) {
