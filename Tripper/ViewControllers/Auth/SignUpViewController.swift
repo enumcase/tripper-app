@@ -21,6 +21,8 @@ class SignUpViewController: UIViewController {
     
     private let signUpButton = TripperMainButton(title: "Sign Up")
     
+    private let haveAnAccountLabel = CallForActionStackView(questionText: "Already have an account?", actionText: "Sign In")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,6 +38,7 @@ class SignUpViewController: UIViewController {
         view.addSubview(emailTextField)
         view.addSubview(passwordTextField)
         view.addSubview(signUpButton)
+        view.addSubview(haveAnAccountLabel)
         
         setConstraints()
     }
@@ -67,8 +70,19 @@ class SignUpViewController: UIViewController {
             
             signUpButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -118),
             signUpButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-            signUpButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
+            signUpButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            
+            haveAnAccountLabel.topAnchor.constraint(equalTo: signUpButton.bottomAnchor, constant: 32),
+            haveAnAccountLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
+            haveAnAccountLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50)
         ])
     }
 
+}
+
+extension SignUpViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
