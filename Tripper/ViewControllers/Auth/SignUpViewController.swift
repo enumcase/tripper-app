@@ -41,6 +41,17 @@ class SignUpViewController: UIViewController {
         view.addSubview(haveAnAccountLabel)
         
         setConstraints()
+        
+        signUpButton.addTarget(self, action: #selector(didTapSignUpPageButton), for: .touchUpInside)
+        
+        haveAnAccountLabel.actionButton.addTarget(self, action: #selector(didTapSignUpPageButton), for: .touchUpInside)
+    }
+    
+    @objc func didTapSignUpPageButton() {
+        let signInVC = SignInViewController()
+        let signInNC = UINavigationController(rootViewController: signInVC)
+        signInNC.modalPresentationStyle = .fullScreen
+        present(signInNC, animated: true)
     }
     
     /// Constraints
