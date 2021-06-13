@@ -20,7 +20,11 @@ class TripperTextField: UITextField {
         
         heightAnchor.constraint(equalToConstant: 56).isActive = true
         
-        self.useUnderline()
+        let bottomLine = CALayer()
+        bottomLine.frame = CGRect(x: 16, y: 56, width: UIScreen.main.bounds.width - 32, height: 0.5)
+        bottomLine.backgroundColor = UIColor.black.withAlphaComponent(0.75).cgColor
+        self.borderStyle = .none
+        self.layer.addSublayer(bottomLine)
     }
     
     required init?(coder: NSCoder) {
