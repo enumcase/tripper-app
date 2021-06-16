@@ -36,6 +36,7 @@
 		74469CAE260666ED0018B02C /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469CAD260666ED0018B02C /* PersistenceManager.swift */; };
 		74469CCF260687020018B02C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469CCE260687020018B02C /* UIViewControllerExtension.swift */; };
 		74469CD526068ED40018B02C /* TripperMainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74469CD426068ED40018B02C /* TripperMainButton.swift */; };
+		745536642679F56B00171CB3 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745536632679F56B00171CB3 /* UITextFieldExtension.swift */; };
 		74991389266FAC6100E6E34D /* CallForActionStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74991388266FAC6100E6E34D /* CallForActionStackView.swift */; };
 		74B389E72676223A00DCB8FC /* AuthPageTextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B389E62676223A00DCB8FC /* AuthPageTextLabel.swift */; };
 		74E7ECFF2668C9980005C09D /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E7ECFE2668C9980005C09D /* AuthManager.swift */; };
@@ -73,6 +74,7 @@
 		74469CAD260666ED0018B02C /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		74469CCE260687020018B02C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		74469CD426068ED40018B02C /* TripperMainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripperMainButton.swift; sourceTree = "<group>"; };
+		745536632679F56B00171CB3 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		74991388266FAC6100E6E34D /* CallForActionStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallForActionStackView.swift; sourceTree = "<group>"; };
 		74B389E62676223A00DCB8FC /* AuthPageTextLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPageTextLabel.swift; sourceTree = "<group>"; };
 		74E7ECFE2668C9980005C09D /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				74469CCE260687020018B02C /* UIViewControllerExtension.swift */,
+				745536632679F56B00171CB3 /* UITextFieldExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				7405554D2605CE2D00926FE1 /* TopMenuBarStackView.swift in Sources */,
 				74469CA12606435E0018B02C /* TripperTextField.swift in Sources */,
 				742383D32646D1C000155C21 /* SignUpViewController.swift in Sources */,
+				745536642679F56B00171CB3 /* UITextFieldExtension.swift in Sources */,
 				7405555C2605D70E00926FE1 /* TripperTabBarController.swift in Sources */,
 				7405553E2605CD2D00926FE1 /* TripsViewController.swift in Sources */,
 				740555452605CD4A00926FE1 /* SignInViewController.swift in Sources */,
